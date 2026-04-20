@@ -1,0 +1,8 @@
+<form method="POST" action="/gemini">
+    <input type="text" name="question" placeholder="Faça sua pergunta...">
+    <button type="submit">Enviar</button>
+</form>
+
+{% if response %}
+    <p><strong>Resposta:</strong> {{ response }}</p>
+{% endif %}
